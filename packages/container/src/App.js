@@ -22,6 +22,8 @@ const history = createBrowserHistory();
 export default () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
 
+  // for redirect
+
   useEffect(() => {
     if (isSignedIn) {
       history.push('/dashboard');
